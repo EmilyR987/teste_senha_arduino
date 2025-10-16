@@ -1,20 +1,20 @@
 #include <Keyboard.h>
 
 void setup() {
-  delay(3000); // Espera 3 segundos para o sistema reconhecer o Leonardo
+  delay(3000); 
   
   Keyboard.begin();
-  delay(1000); // Pequeno atraso extra antes de digitar
+  delay(1000); 
 
-  // Digita o usuário
+
   Keyboard.print("admin");
-  Keyboard.write('\t');   // TAB para mudar de campo
+  Keyboard.write('\t');   
 
   // Digita a senha
   Keyboard.print("admin123");
-  Keyboard.write('\n');   // ENTER para enviar
+  Keyboard.write('\n');   
 
-  Keyboard.end(); // Encerra o controle do teclado
+  Keyboard.end(); 
 }
 
 void loop() {
